@@ -15,12 +15,47 @@
 </head>
 
 <body>
-  
+
+  <div class="container my-5 p-4 bg-danger text-white rounded">
+    <div class="card">
+        <div class="card-header text-center bg-white text-danger">
+            <h4>Calcola il prezzo del tuo biglietto</h4>
+        </div>
+        <div class="card-body bg-light text-dark">
+            <form>
+                <!-- Griglia per Nome Cognome, Km da percorrere e Fascia d'età -->
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="name" class="form-label">Nome Cognome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome e cognome">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="km" class="form-label">Km da percorrere</label>
+                        <input type="number" class="form-control" id="km" placeholder="Inserisci il numero di km">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ageGroup" class="form-label">Fascia d'età</label>
+                        <select class="form-select" id="ageGroup">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne" selected>Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Bottoni -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-light text-danger me-2">Genera</button>
+                    <button type="reset" class="btn btn-light text-danger">Annulla</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 
 
-  
 <!-- Collegamento JavaScript -->
 <script src="script.js"></script>
 </body>
